@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="../frontend/src/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src ="../frontend/src/js/login.js"></script>
+  <link rel="stylesheet" href="../frontend/src/scss/app.scss">
+  <title>Job Search</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Job Search App</h1>
+      <h2>Find your perfect job today!</h2>
+      <form id="search-form">
+          <input type="text" class="form-control" placeholder="Job Title" id="search">
+          <input type="text" class="form-control" placeholder="Location" id="location">
+          <button class="btn btn-block btn-primary">Search</button>
+        </form>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+          <div class="loading-element">
+            <img src="./src/imgs/45.svg" alt="">
+          </div>
+          <div class="result-container"></div>        
+    </div>
+  </main>
+  <script src="../frontend/src/js/app.js"></script>
+  <link rel="stylesheet" href="../frontend/src/css/style.css">
+      <div class="topnav">
+        <img src="./src/imgs/logo.png" alt="logo"width =130px height = 50px;>
+        <a href ="http://localhost:3002/logout.ejs" class="button3">Logout</a>
+          <a href="http://localhost:3002/dashboard.ejs">DashBoard</a>  
+          <a href="http://localhost:3002/inbox.ejs">Messages</a> 
+          <a href="http://localhost:3002/contact.ejs">Contact</a>
+          <a class="active" href="http://localhost:1234/index.html">Job Search</a>
+          <a href="http://localhost:3002/about1.ejs">About</a>
+          <a  href="http://localhost:3002/Home.ejs">Home</a>
+        </div>
+</body>
+</html>

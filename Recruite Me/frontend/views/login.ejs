@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<% if (messages.error) {%>
+    <%= messages.error %>
+    <% } %>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/stylesignup.css"/>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="container">
+            <form action="/login.ejs" method="POST">
+                <h2>Login</h2>
+                <div>
+                    <label for="email" class="col-sm-3 control-label">Email</label>
+                    <input type="email" id="email1" name="email" placeholder="Enter Email" class="form-control" required>
+                </div>
+                <div>
+                    <label for="password" class="col-sm-3 control-label">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button type="submit" class="btn btn-primary btn-block"style="position: relative; width: 300px; left:400px; top:30px;">Login</button>
+                    </div>
+                </div>
+            </form> 
+        </div>
+<a href="/views/signup.ejs"><button type="submit" class="btn btn-primary btn-block" style="position:relative; width:300px; left: 990px; top:-25px;">Signup</button></a>
+<a href="http://localhost:3002/"><button type="submit" class="btn btn-primary btn-block" style="position:relative; width:300px; left: 160px; top:-60px;">Home_Page</button></a>
+

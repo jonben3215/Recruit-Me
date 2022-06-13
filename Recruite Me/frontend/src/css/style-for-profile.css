@@ -1,0 +1,38 @@
+body
+{
+    background-color: rgb(169, 179, 182);
+}
+#box
+{
+    border: 1px solid black;
+    padding: 30px;
+}
+img
+{
+    border: 2px solid black;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+.fa:hover {
+    opacity: 0.5;
+}
+#social.icons
+{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: all 1s
+}
