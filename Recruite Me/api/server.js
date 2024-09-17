@@ -15,7 +15,7 @@ const server = createServer((req, res) => {
   const decodedParams = decodeParams(new URLSearchParams(requestURL.search));
   const { search, location, country = 'gb' }  = decodedParams;
 
-  const targetURL = const targetURL = `${config.BASE_URL}/${country.toLowerCase()}/${config.BASE_PARAMS}&app_id=${config.APP_ID}&app_key=${config.API_KEY}&what=${search}&where=${location}`;
+ const targetURL = `${config.BASE_URL}/${country.toLowerCase()}/${config.BASE_PARAMS}&app_id=${'0ccca982'}&app_key=${'2c16edcafe59677615b5996af2978dbd'}&what=${search}&where=${location}`;
     if (req.method === 'GET') {
       console.log(chalk.green(`Proxy GET request to : ${targetURL}`));
       axios.get(targetURL)
